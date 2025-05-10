@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('/형우_기억저장소_v1.json')
+    fetch('/memory_storage_v1.json')
       .then((res) => res.json())
       .then((json) => setData(json));
   }, []);
